@@ -1,14 +1,17 @@
+/* Mengatur margin padding secara keseluruhan  */
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+/* Mengatur jenis tulisan dan menutup yang terlihat berlebihan di halaman */
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
+/* Mengatur ukuran background  */
 .wave{
 	position: absolute;
 	bottom: -5rem;
@@ -16,6 +19,7 @@ body{
 	z-index: 1;
 }
 
+/*  Mengatur Layout untuk di tampilkan*/
 .container{
     width: 100vw;
     height: 100vh;
@@ -25,6 +29,7 @@ body{
     padding: 0 2rem;
 }
 
+/* Mengatur display dan posisi gambar */
 .img{
 	display: flex;
 	justify-content: flex-end;
@@ -33,26 +38,30 @@ body{
 
 }
 
+/* Mengatur display */
 .login-content{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
 }
-
+/* Mengatur lebar class img yang terdapat img  */
 .img img{
 	max-width: 31rem;
 }
 
+/* Mengatur lebar dan membuat form agar selalu di paling depan */
 form{
 	width: 360px;
 	z-index: 999999;
 }
 
+/* Mengatur img yang terdapat di class login-conten  */
 .login-content img{
     height: 100px;
 }
 
+/* Mengatur ukuran h2 yang terdapat di class login-content */
 .login-content h2{
 	width: 50%x;
 	margin: 15px 0;
@@ -61,6 +70,7 @@ form{
 	font-size: 2rem;
 }
 
+/* mengatur display class login-content dan class input-div */
 .login-content .input-div{
 	position: relative;
     display: grid;
@@ -70,10 +80,13 @@ form{
     border-bottom: 2px solid #d9d9d9;
 }
 
+/* Mengatur margin-top di class login-content dan class input-div dan class one */
+
 .login-content .input-div.one{
 	margin-top: 0;
 }
 
+/* Mengatur class i memberikan warna dan mengatur tampilan */
 .i{
 	color: #d9d9d9;
 	display: flex;
@@ -81,16 +94,21 @@ form{
 	align-items: center;
 }
 
+
+/* Mengatur transisi dari i yang berada di class i */
 .i i{
 	transition: .3s;
 }
 
+/* Mengatur posisi dari icon melihat password */
 .show-pass{
 	position: absolute;
 	right: 0px;
 	top: 15px;
 	cursor : pointer;
 }
+
+/* Mengatur posisi dari icon menutup password */
 .hide-pass{
 	position: absolute;
 	right: 0px;
@@ -98,17 +116,21 @@ form{
 	display: none;
 	cursor : pointer;
 }
+
+
 .hide-pass img{
 	width: 1em;
 	right: 0px;
 	cursor : pointer;
 }
 
+/* Mengatur posisi div yang berada di class input-div */
 .input-div > div{
     position: relative;
 	height: 45px;
 }
 
+/* mengatur element h5 yang berada di div yang berada di class input-div */
 .input-div > div > h5{
 	position: absolute;
 	left: 10px;
@@ -119,6 +141,7 @@ form{
 	transition: .3s;
 }
 
+/* Mengatur class input-div before dan after nya */
 .input-div:before, .input-div:after{
 	content: '';
 	position: absolute;
@@ -141,15 +164,18 @@ form{
 	width: 50%;
 }
 
+/*  Mengatur element h5 yang berada dalam div yang ada di class focus dan class input-div */
 .input-div.focus > div > h5{
 	top: -5px;
 	font-size: 15px;
 }
 
+/* Mengatur warna text di element i yang berada di class i dan berada di class fokus dan class input-div  */ 
 .input-div.focus > .i > i{
 	color: #38d39f;
 }
 
+/* Mengatur element input yang berada di element div dan berada di class input-div */
 .input-div > div > input{
 	position: absolute;
 	left: 0;
@@ -165,10 +191,12 @@ form{
 	font-family: 'poppins', sans-serif;
 }
 
+/* Mengatur margin input-div dan class pass */
 .input-div.pass{
 	margin-bottom: 4px;
 }
 
+/* Mengatur elemet a */
 a{
 	display: block;
 	text-align: right;
@@ -178,10 +206,12 @@ a{
 	transition: .3s;
 }
 
+/* Memberi animasi elemet a saat pointer berada dia atas element */
 a:hover{
 	color: #38d39f;
 }
 
+/* Mengatur tampilan dan display class btn */
 .btn{
 	display: block;
 	width: 100%;
@@ -200,17 +230,20 @@ a:hover{
 	transition: .5s;
 
 }
+/* Mengatur class btn saat pointer berada di atas element */
 .btn:hover{
 	background-position: right;
 }
 
-
+/* Mengatur media query agar responsif  saat ukuran layar 1050px maka class container grip gap nya 5 rem */
 @media screen and (max-width: 1050px){
 	.container{
 		grid-gap: 5rem;
 	}
 }
 
+/* Mengatur media query agar responsif  saat ukuran layar 1000px maka element form lebarnya 290pc, class login-content h2 
+tampilannya menyesuaikan dan gambar menyesuaikan */
 @media screen and (max-width: 1000px){
 	form{
 		width: 290px;
@@ -225,6 +258,9 @@ a:hover{
 		width: 400px;
 	}
 }
+
+/* Mengatur media query agar responsif  saat ukuran layar 1000px mengatur class container menjadi 1 colom dan menghilangkan gambar di 
+class img dan wave dan class login-conten menjadi di tengah */
 
 @media screen and (max-width: 1000px){
 	.container{
