@@ -73,7 +73,12 @@
             	<a href="#">Forgot Password?</a>
             	<input type="submit" class="btn" value="submit" name="proseslog">
 				<h1>coba coba</h1>
+				<ul>
+					<li>coba1</li>
+					<li>coba1</li>
+				</ul>
             </form>
+
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
